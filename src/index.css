@@ -1,3 +1,15 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navbg{
+    background-image: url('./assets/navBG.jpg');
+    background-position: 500% 500%;
+    background-size: cover;
+}
+.cabin{
+    font-family: 'Cabin', sans-serif;
+}
