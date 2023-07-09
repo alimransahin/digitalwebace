@@ -6,7 +6,7 @@ const Contact = () => {
 return (
 <div className=" bg-white flex flex-col gap-8">
     <div className="min-h-[350px] contactImg flex flex-col justify-center items-center gap-5 text-white cabin relative">
-        <div className="absolute left-0 top-0  w-full h-full bg-gradient from-[#6C9BCF] bg-gradient-to-r"></div>
+        <div className="absolute left-0 top-0  w-full h-full bg-gradient from-[#EBD8B2] bg-gradient-to-r"></div>
        <span className="relative z-10 w-full flex flex-col justify-center items-center gap-5 text-white cabin">
        <h1 className="text-5xl text-white text-bold tracking-wider">Contact Us</h1>
         <p className="text-lg text-center font-semibold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, quos impedit aliquid <br /> voluptas officiis voluptatum?</p>
