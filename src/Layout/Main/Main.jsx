@@ -1,11 +1,15 @@
+import { Outlet } from "react-router-dom";
 import Navbar from "../../Shared/Navbar";
-import Banner from "../Homepage/Banner";
+import Footer from "../../Shared/Footer";
 
 const Main = () => {
 return (
 <div>
 <Navbar/>
-<Banner/>
+<div className="min-h-screen">
+<Outlet/>
+</div>
+<Footer/>
  </div>
 
 );
