@@ -1,3 +1,20 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.contactImg{
+  background-image: url('https://img.freepik.com/premium-vector/technical-support-icon-made-with-binary-code-customer-help-online-tech-support-customer-service-business-technology-concept-digital-matrix-background-with-digits-1-0-vector-illustration_127544-1853.jpg?w=996');
+  background-position: 100% 50%;
+  background-size: cover;
+}
+.navbg{
+    background-image: url('./assets/navBG.jpg');
+    background-position: 100% 100%;
+    background-size: cover;
+}
+.cabin{
+    font-family: 'Cabin', sans-serif;
+}
