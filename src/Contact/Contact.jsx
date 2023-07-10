@@ -1,6 +1,6 @@
 import { useState } from "react";
 import PhoneInput from "react-phone-number-input";
-import 'react-phone-number-input/style.css'
+// import './react-phone-number-input/style.css'
 const Contact = () => {
     const [value, setValue] = useState()
 return (
