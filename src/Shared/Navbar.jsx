@@ -32,6 +32,7 @@ return (
           <Link to="/contact" className="block md:font-md lg:text-lg px-3 ">Contact</Link>
         </li>
       </ul>
+{/* >>>>>>> development */}
     </div>
     
     </div>
