@@ -1,8 +1,24 @@
-import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
 import PhoneInput from "react-phone-number-input";
 import 'react-phone-number-input/style.css'
 const Contact = () => {
     const [value, setValue] = useState()
+
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_l7rpbmx', 'template_p0kbta2', {...form, value: value}.current, 'iO3UtMwx_ea2BEoW3')
+      .then((result) => {
+          console.log(result.text);
+          e.target.reset()
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
 return (
 <div className=" bg-white flex flex-col gap-8">
     <div className="min-h-[350px] contactImg flex flex-col justify-center items-center gap-5 text-white cabin relative">
@@ -40,16 +56,16 @@ return (
         <button className="bg-blue-900 font-semibold text-white rounded-md px-4 py-2">LinkedIn</button>
     </div>
         </aside>
-        <form className="w-3/4 flex flex-col gap-5 min-h-[450px] border border-t-4 border-[#654E92] rounded-xl p-5">
+        <form ref={form} onSubmit={sendEmail} className="w-3/4 flex flex-col gap-5 min-h-[450px] border border-t-4 border-[#654E92] rounded-xl p-5">
           <span className="flex-flex-col gap-4 w-full">
           <p className="text-lg font-semibold text-gray-800 mb-2">Your name: <sup className="text-red-600">*</sup></p>
-          <input type="text" className="w-full rounded-md px-3 py-2 border border-gray-400 bg-transparent" />
+          <input name='user_name' type="text" className="w-full rounded-md px-3 py-2 border border-gray-400 bg-transparent" />
           </span>
 
           <div className="flex gap-3 justify-center items-center">
           <span className="flex-flex-col gap-4 w-full">
           <p className="text-lg font-semibold text-gray-800 mb-2">Your email: <sup className="text-red-600">*</sup></p>
-          <input type="text" className=" rounded-md px-3 py-2 border border-gray-400 bg-transparent" />
+          <input name='user_email' type="text" className=" rounded-md px-3 py-2 border border-gray-400 bg-transparent" />
           </span>
           <span className="flex-flex-col gap-4 w-full">
           <p className="text-lg font-semibold text-gray-800 mb-2">Your phone number: <sup className="text-red-600">*</sup></p>
@@ -62,17 +78,18 @@ return (
           </div>
 
           <span className="flex-flex-col gap-4 w-full">
-          <p className="text-lg font-semibold text-gray-800 mb-2">Your Whatsapp number <span className="text-[#6C9BCF] text-sm">(for quick contact.)</span> <sup className="text-red-600">*</sup> :</p>
-          <input type="text" className="w-full rounded-md px-3 py-2 border border-gray-400 bg-transparent" />
+          <p className="text-lg font-semibold text-gray-800 mb-2">Your Whatsapp number <span className="text-[#6C9BCF] text-sm">(for quick contact.)</span> :</p>
+          <input name='user_wp_number' type="text" className="w-full rounded-md px-3 py-2 border border-gray-400 bg-transparent" />
           </span>
           <span className="flex-flex-col gap-4 w-full">
           <p className="text-lg font-semibold text-gray-800 mb-2">Select a topic: <sup className="text-red-600">*</sup></p>
-          <input type="text" className="w-full rounded-md px-3 py-2 border border-gray-400 bg-transparent" />
+          <input name='user_topic' type="text" className="w-full rounded-md px-3 py-2 border border-gray-400 bg-transparent" />
           </span>
           <span className="flex-flex-col gap-4 w-full">
-          <p className="text-lg font-semibold text-gray-800 mb-2">Message: <sup className="text-red-600">*</sup></p>
-          <textarea rows={7} type="text" className="w-full rounded-md px-3 py-2 border border-gray-400 bg-transparent" />
+          <p className="text-lg font-semibold text-gray-800 mb-2">Message: </p>
+          <textarea name='details' rows={7} type="text" className="w-full rounded-md px-3 py-2 border border-gray-400 bg-transparent" />
           </span>
+          <button type="submit" className="bg-[#654E92] font-semibold text-white rounded-md px-4 py-2">Send</button>
         </form>
     </div>
 </div>
