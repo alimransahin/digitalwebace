@@ -1,6 +1,10 @@
 .menu li{
     border-bottom: 2px solid transparent;
 }
+.menu li {
+    color: #EBD8B2;
+}
 .menu li:hover {
-    border-color:  rgb(0, 47, 255);
+    color: #468cdb;
+    border-color: #468cdb;
 }
