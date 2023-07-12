@@ -7,7 +7,7 @@ const Banner2 = () => {
         class="w-full h-full flex flex-col md:flex-row  justify-center items-center 
              bg-blue-600/30 backdrop-brightness-50 px-10 py-8"
       >
-        <iframe
+        {/* <iframe
           width="560"
           height="315"
           src="https://www.youtube-nocookie.com/embed/lBfshkPlMW8"
@@ -15,7 +15,7 @@ const Banner2 = () => {
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
-        ></iframe>
+        ></iframe> */}
         <div className="info md:w-1/2 p-2">
           <h2 class="text-white text-2xl font-medium text-center pb-4">
             Here is an example of colored overlay on an image

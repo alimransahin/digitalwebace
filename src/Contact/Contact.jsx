@@ -28,7 +28,7 @@ return (
         <p className="text-lg text-center font-semibold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, quos impedit aliquid <br /> voluptas officiis voluptatum?</p>
        </span>
     </div>
-    <div className="flex mx-auto p-5 relative rounded-lg z-20 -mt-32 h-5/6 w-5/6 bg-white justify-between items-center drop-shadow-lg">
+    <div className="flex flex-col md:flex-row mx-auto p-5 relative rounded-lg z-20 -mt-32 h-5/6 w-11/12 bg-white lg:w-5/6 justify-between items-center drop-shadow-lg">
         <aside className="flex flex-col gap-5 w-1/2 h-full ">
     <div className="flex gap-3 justify-center items-center">
     <img src="https://mdinfotechbd.com/assets/images/3d00879.webp" className="w-32 h-32" alt="" />
@@ -56,13 +56,13 @@ return (
         <button className="bg-blue-900 font-semibold text-white rounded-md px-4 py-2">LinkedIn</button>
     </div>
         </aside>
-        <form ref={form} onSubmit={sendEmail} className="w-3/4 flex flex-col gap-5 min-h-[450px] border border-t-4 border-[#654E92] rounded-xl p-5">
+        <form ref={form} onSubmit={sendEmail} className="w-4/6  flex flex-col gap-5 min-h-[450px] border border-t-4 border-[#654E92] rounded-xl p-5">
           <span className="flex-flex-col gap-4 w-full">
           <p className="text-lg font-semibold text-gray-800 mb-2">Your name: <sup className="text-red-600">*</sup></p>
           <input name='user_name' type="text" className="w-full rounded-md px-3 py-2 border border-gray-400 bg-transparent" />
           </span>
 
-          <div className="flex gap-3 justify-center items-center">
+          <div className="flex gap-3 flex-col md:flex-row justify-center items-center">
           <span className="flex-flex-col gap-4 w-full">
           <p className="text-lg font-semibold text-gray-800 mb-2">Your email: <sup className="text-red-600">*</sup></p>
           <input name='user_email' type="text" className=" rounded-md px-3 py-2 border border-gray-400 bg-transparent" />
