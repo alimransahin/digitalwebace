@@ -1,7 +1,7 @@
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import PhoneInput from "react-phone-number-input";
-// import './react-phone-number-input/style.css'
+import 'react-phone-number-input/style.css'
 const Contact = () => {
     const [value, setValue] = useState()
 
@@ -20,15 +20,15 @@ const Contact = () => {
   };
 
 return (
-<div className=" bg-white flex flex-col gap-8">
+<div className=" bg-[url('https://images.unsplash.com/photo-1482977036925-e8fcaa643657?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80')] bg-cover bg-no-repeat flex flex-col gap-8 ">
     <div className="min-h-[350px] contactImg flex flex-col justify-center items-center gap-5 text-white cabin relative">
         <div className="absolute left-0 top-0  w-full h-full bg-gradient from-[#EBD8B2] bg-gradient-to-r"></div>
        <span className="relative z-10 w-full flex flex-col justify-center items-center gap-5 text-white cabin">
-       <h1 className="text-5xl text-white text-bold tracking-wider">Contact Us</h1>
+       <h1 className="text-5xl cabin text-white font-bold tracking-wider">Contact Us</h1>
         <p className="text-lg text-center font-semibold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, quos impedit aliquid <br /> voluptas officiis voluptatum?</p>
        </span>
     </div>
-    <div className="flex mx-auto p-5 relative rounded-lg z-20 -mt-32 h-5/6 w-5/6 bg-white justify-between items-center drop-shadow-lg">
+    <div className="flex flex-col md:flex-row mx-auto p-5 relative rounded-lg z-20 -mt-32 mb-10 h-5/6 w-11/12 bg-white lg:w-5/6 justify-between items-center drop-shadow-lg">
         <aside className="flex flex-col gap-5 w-1/2 h-full ">
     <div className="flex gap-3 justify-center items-center">
     <img src="https://mdinfotechbd.com/assets/images/3d00879.webp" className="w-32 h-32" alt="" />
@@ -56,13 +56,13 @@ return (
         <button className="bg-blue-900 font-semibold text-white rounded-md px-4 py-2">LinkedIn</button>
     </div>
         </aside>
-        <form ref={form} onSubmit={sendEmail} className="w-3/4 flex flex-col gap-5 min-h-[450px] border border-t-4 border-[#654E92] rounded-xl p-5">
+        <form ref={form} onSubmit={sendEmail} className="w-4/6  flex flex-col gap-5 min-h-[450px] border border-t-4 border-[#654E92] rounded-xl p-5">
           <span className="flex-flex-col gap-4 w-full">
           <p className="text-lg font-semibold text-gray-800 mb-2">Your name: <sup className="text-red-600">*</sup></p>
           <input name='user_name' type="text" className="w-full rounded-md px-3 py-2 border border-gray-400 bg-transparent" />
           </span>
 
-          <div className="flex gap-3 justify-center items-center">
+          <div className="flex gap-3 flex-col md:flex-row justify-center items-center">
           <span className="flex-flex-col gap-4 w-full">
           <p className="text-lg font-semibold text-gray-800 mb-2">Your email: <sup className="text-red-600">*</sup></p>
           <input name='user_email' type="text" className=" rounded-md px-3 py-2 border border-gray-400 bg-transparent" />

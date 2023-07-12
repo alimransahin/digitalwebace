@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 const Navbar = () => {
   return (
-    <div>
-      <nav className="px-10 py-6 navbg flex justify-center items-center rounded ">
+    
+      <nav className="px-10 py-6 navbg sticky top-0 z-50 left-0 flex justify-center items-center ">
         <div className="container flex flex-wrap justify-between items-center cabin mx-auto">
           <Link to="/" className="flex">
             <svg
@@ -44,9 +44,9 @@ const Navbar = () => {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
+               
                 d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
+               
               ></path>
             </svg>
             <svg
@@ -56,9 +56,9 @@ const Navbar = () => {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
+               
                 d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"
+               
               ></path>
             </svg>
           </button>
@@ -70,20 +70,20 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="text-black md:hover:text-blue-700 md:p-0 m-0">
-                <Link to="#about" className="block md:font-md lg:text-lg px-3 ">
+                <a href="#about" className="block md:font-md lg:text-lg px-3 ">
                   About
-                </Link>
+                </a>
               </li>
               <li className="text-black md:hover:text-blue-700 md:p-0 m-0">
                 <Link
-                  to="#services"
+                  to="services"
                   className="block md:font-md lg:text-lg px-3 "
                 >
                   Services
                 </Link>
               </li>
               <li className="text-black md:hover:text-blue-700 md:p-0 m-0">
-                <Link to="#faq" className="block md:font-md lg:text-lg px-3 ">
+                <Link to="faq" className="block md:font-md lg:text-lg px-3 ">
                   FAQ
                 </Link>
               </li>
@@ -100,7 +100,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </div>
+   
   );
 };
 export default Navbar;
