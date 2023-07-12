@@ -1,5 +1,5 @@
  
-import "./Services.css";
+
 import img1 from '../assets/service1.png'
 import img2 from '../assets/service2.png'
 import img3 from '../assets/uiux.png'
