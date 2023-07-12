@@ -1,5 +1,4 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +7,6 @@
 @keyframes logobg {
   0% {
     background-position: 100%;
-   
   }
   100% {
     background-position: 0%;
@@ -16,27 +14,35 @@
 }
 
 .logo {
-  background-image: linear-gradient(to left, #EBD8B2, #654E92, #6C9BCF, #A5C0DD, #EBD8B2);
+  background-image: linear-gradient(
+    to left,
+    #ebd8b2,
+    #654e92,
+    #6c9bcf,
+    #a5c0dd,
+    #ebd8b2
+  );
   background-size: 400%;
   background-clip: text;
   color: transparent;
   animation: logobg 3s ease-in-out infinite alternate-reverse;
 }
 
-.contactImg{
-  background-image: url('https://img.freepik.com/premium-vector/technical-support-icon-made-with-binary-code-customer-help-online-tech-support-customer-service-business-technology-concept-digital-matrix-background-with-digits-1-0-vector-illustration_127544-1853.jpg?w=996');
+.contactImg {
+  background-image: url("https://img.freepik.com/premium-vector/technical-support-icon-made-with-binary-code-customer-help-online-tech-support-customer-service-business-technology-concept-digital-matrix-background-with-digits-1-0-vector-illustration_127544-1853.jpg?w=996");
   background-position: 100% 50%;
   background-size: cover;
 }
-.navbg{
-    background-image: url('https://img.freepik.com/free-vector/techno-squares-background_1048-11194.jpg?w=740&t=st=1688902697~exp=1688903297~hmac=0cbf59a80e7d275dc75ae4f69d2131169a03bb62482f764a2fd8cd0cc6c44611');
-    /* background-position: 100% 100%; */
-    opacity: 0.8;
-    background-size: cover;
+.navbg {
+  background-image: url("https://images.unsplash.com/photo-1482977036925-e8fcaa643657?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80");
+  /* background-position: 100% 100%; */
+  opacity: 1;
+  z-index: 99;
+  background-size: cover;
 }
-.cabin{
-    font-family: 'Cabin', sans-serif;
+.cabin {
+  font-family: "Cabin", sans-serif;
 }
---PhoneInputCountryFlag-height{
-height: 20px;
+--PhoneInputCountryFlag-height {
+  height: 20px;
 }
