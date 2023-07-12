@@ -18,7 +18,9 @@
     "react-phone-number-input": "^3.3.0",
     "react-router-dom": "^6.14.1",
     "react-scripts": "5.0.1",
+    "react-scroll-trigger": "^0.6.14",
     "swiper": "^10.0.4",
+    "use-count-up": "^3.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
