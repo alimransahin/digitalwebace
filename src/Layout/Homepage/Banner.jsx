@@ -9,7 +9,7 @@ const Banner = () => {
           {" "}
           The Ultimate Digital Solution for All !
         </p>
-        <div className="mt-10 cabin">
+        <div className="mt-10 p-6 cabin">
           <a
             href="#_"
             className="relative px-6 py-3 font-bold text-white rounded-lg group"
