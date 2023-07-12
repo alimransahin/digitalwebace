@@ -43,3 +43,6 @@ body{
 .cabin{
     font-family: 'Cabin', sans-serif;
 }
+--PhoneInputCountryFlag-height{
+height: 20px;
+}

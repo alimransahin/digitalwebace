@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import './Navbar.css';
 const Navbar = () => {
   return (
     
@@ -29,13 +29,7 @@ const Navbar = () => {
               DigitalWebAce
             </span>
           </Link>
-          <button
-            data-collapse-toggle="mobile-menu"
-            type="button"
-            className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden focus:border-none focus:ring-2 focus:ring-gray-200 hover:border-b-2 border-[#EBD8B2]"
-            aria-controls="mobile-menu-2"
-            aria-expanded="false"
-          >
+          <button data-collapse-toggle="mobile-menu" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden focus:border-none focus:ring-2 focus:ring-gray-200 hover:border-b-2 border-[#EBD8B2]" aria-controls="mobile-menu-2" aria-expanded="false">
             <span className="sr-only">Open main menu</span>
             <svg
               className="w-6 h-6"
