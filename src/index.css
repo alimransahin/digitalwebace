@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes logobg {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo {
+  background-image: linear-gradient(
+    to left,
+    #ebd8b2,
+    #654e92,
+    #6c9bcf,
+    #a5c0dd,
+    #ebd8b2
+  );
+  background-size: 400%;
+  background-clip: text;
+  color: transparent;
+  animation: logobg 3s ease-in-out infinite alternate-reverse;
+}
+
+.contactImg {
+  background-image: url("https://img.freepik.com/premium-vector/technical-support-icon-made-with-binary-code-customer-help-online-tech-support-customer-service-business-technology-concept-digital-matrix-background-with-digits-1-0-vector-illustration_127544-1853.jpg?w=996");
+  background-position: 100% 50%;
+  background-size: cover;
+}
+.navbg {
+  background-image: url("https://images.unsplash.com/photo-1482977036925-e8fcaa643657?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80");
+  /* background-position: 100% 100%; */
+  opacity: 1;
+  z-index: 99;
+  background-size: cover;
+}
+.cabin {
+  font-family: "Cabin", sans-serif;
+}
+--PhoneInputCountryFlag-height {
+  height: 20px;
 }
