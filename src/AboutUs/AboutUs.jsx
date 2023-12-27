@@ -1,5 +1,4 @@
- 
-import stroke from '../assets/stroke.png'
+import stroke from "../assets/stroke.png";
 const AboutUs = () => {
   return (
     <div className="sm:flex py-16 bg-[#F6F6F6]" id="about">
@@ -14,8 +13,8 @@ const AboutUs = () => {
         <div className="text-3xl cabin tracking-wider font-bold text-blue-500 py-3">
           About Us
         </div>
-        <img src={stroke} className='w-1/4 mb-5' alt="" />
-        <p className="text-gray-600 tracking-wider"  data-aos="fade-left">
+        <img src={stroke} className="w-1/4 mb-5" alt="" />
+        <p className="text-gray-600 tracking-wider" data-aos="fade-left">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure at
           nesciunt modi ipsa vel obcaecati, doloribus tenetur mollitia autem
           nihil eius aspernatur atque recusandae distinctio molestias officia
@@ -25,8 +24,12 @@ const AboutUs = () => {
           possimus consequuntur, suscipit officia nesciunt id?
         </p>
         <div className="flex flex-col mt-5 w-3/4">
-          <h3 className="font-bold text-slate-900 cabin text-2xl">Nur Mohammad Chowdhury</h3>
-          <p className="text-xl tracking-widest font-thin text-gray-700">Junior web developer.</p>
+          <h3 className="font-bold text-slate-900 cabin text-2xl">
+            Md. Al Imran
+          </h3>
+          <p className="text-xl tracking-widest font-thin text-gray-700">
+            Web developer.
+          </p>
         </div>
       </div>
     </div>
